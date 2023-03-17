@@ -41,12 +41,13 @@ export const Footer = () => {
             if (wallets.length > 2) {
                 throw new Error();
             }
-
+/*
             setOptions({
                 walletsListConfiguration: {
                     walletsOrder: wallets
                 }
             })
+*/
         } catch (e) {
             setWalletsSelect(defaultWalletsSelectValue);
             alert('Wrong wallets input. Should be an array of strings "Tonkeeper" or "OpenMask"');
